@@ -1,4 +1,4 @@
-;;; pdf-tools-points.el --- Offline annotation with pdf-tools
+;;; pdf-tools-points.el --- Offline annotation with pdf-tools and tikz
 
 ;; Copyright (C) 2016 Sylvain Rousseau
 
