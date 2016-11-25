@@ -114,7 +114,7 @@ page.")
 }
 
 \\newcommand\\textat[2]{%%
-  \\ifnum\\therealpage=\\csname #2\\endcsname
+  \\ifnum\\therealpage=\\csname #1\\endcsname
   \\node[inner sep=0pt, anchor=base west] at (#1) {#2};
   \\fi
 }
