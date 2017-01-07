@@ -1,6 +1,6 @@
 ;;; pdf-tools-points.el --- Offline annotation with pdf-tools and tikz
 
-;; Copyright (C) 2016 Sylvain Rousseau
+;; Copyright (C) 2016-2017 Sylvain Rousseau
 
 ;; Author: Sylvain Rousseau <thisirs at gmail dot com>
 ;; Maintainer: Sylvain Rousseau <thisirs at gmail dot com>
