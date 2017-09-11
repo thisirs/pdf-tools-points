@@ -146,6 +146,7 @@ page.")
   \\thispagestyle{empty}
 %s
 }
+%%\\pointsfalse
 \\includepdf[pages={-}, pagecommand=\\mycommand]{\\detokenize{%s}}
 
 \\end{document}
