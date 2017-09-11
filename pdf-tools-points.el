@@ -119,6 +119,13 @@ page.")
   \\fi
 }
 
+\\newcommand\\texton[2]{%%
+  \\ifnum\\therealpage=\\csname #1\\endcsname
+  \\node[inner sep=0pt, anchor=center] at (#1) {#2};
+  \\fi
+}
+
+
 \\tikzset{page cs/.cd, x/.store in=\\px, y/.store in=\\py}
 \\tikzdeclarecoordinatesystem{page}{%%
   \\tikzset{page cs/.cd, #1}%%
