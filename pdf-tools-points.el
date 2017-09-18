@@ -171,7 +171,7 @@ last is the filename of the pdf file." )
 (defun pdf-tools-points-visit (&optional filename)
   (interactive)
   (unless filename
-    (setq filename (concat (file-name-sans-extension (pdf-view-buffer-file-name)) "_tikz.tex")))
+    (setq filename (concat (file-name-sans-extension (pdf-view-buffer-file-name)) "_final.tex")))
   (let ((body (pdf-tools-points-to-tikz)))
     (with-current-buffer (find-file filename)
       (insert body))))
