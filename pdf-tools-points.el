@@ -53,7 +53,8 @@ page.")
          (y (cdr pos))
          (xx (/ x (float (car isize))))
          (yy (/ y (float (cdr isize)))))
-    (setq pdf-tools-points-points-list (cons (list page xx yy) pdf-tools-points-points-list))
+    (setq pdf-tools-points-points-list
+          (append pdf-tools-points-points-list (list (list page xx yy))))
     (minibuffer-message "Added point (%f, %f) on page %d, total of %d points"
                         xx yy page (length pdf-tools-points-points-list))))
 
