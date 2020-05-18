@@ -163,6 +163,7 @@ last is the filename of the pdf file." )
     (define-key map [down-mouse-1] #'pdf-tools-points-register-current-point)
     map))
 
+;;;###autoload
 (define-minor-mode pdf-tools-points-minor-mode
   ""
   nil nil nil
