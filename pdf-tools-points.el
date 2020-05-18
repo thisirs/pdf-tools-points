@@ -114,6 +114,13 @@ page.")
   \\fi
 }
 
+\\newcommand\\textcentered[3]{%%
+  \\ifnum\\therealpage=\\csname #2\\endcsname
+  \\path let \\p1=($(#2)-(#1)$), \\n1 = {veclen(\\x1,0)}, \\n2 = {veclen(0,\\y1)} in
+  node[fit={(#1) (#2)}, inner sep=0pt, text width=\\n1] (rect) {#3};
+  \\fi
+}
+
 \\newcommand\\textat[2]{%%
   \\ifnum\\therealpage=\\csname #1\\endcsname
   \\node[inner sep=0pt, anchor=base west] at (#1) {#2};
@@ -148,7 +155,7 @@ page.")
 %s
 }
 %%\\pointsfalse
-\\includepdf[pages={-}, pagecommand=\\mycommand]{\\detokenize{%s}}
+\\includepdf[fitpaper, pages={-}, pagecommand=\\mycommand]{\\detokenize{%s}}
 
 \\end{document}
 "
